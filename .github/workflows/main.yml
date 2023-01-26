@@ -27,6 +27,8 @@ jobs:
         run: echo Hello, world! > test.txt | type test.txt
       - name: Upload math result
         uses: actions/upload-artifact@v3
+        with:
+          path: test.txt
         
   dotnet_job:
     runs-on: windows-latest
